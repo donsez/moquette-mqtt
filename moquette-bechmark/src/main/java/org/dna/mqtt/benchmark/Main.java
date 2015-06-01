@@ -12,8 +12,8 @@ import java.util.concurrent.Executors;
  * @author andrea
  */
 public class Main {
-    private static final int PUBLISHER_POOL_SIZE = 5;
-    private static final int NUM_CONCURRENT_PRODS = 5;
+    private static final int PUBLISHER_POOL_SIZE = 4;
+    private static final int NUM_CONCURRENT_PRODS = 4;
     
     public static void main(String[] args) throws InterruptedException {
         ExecutorService consumerPool = Executors.newFixedThreadPool(PUBLISHER_POOL_SIZE);
